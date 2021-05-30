@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Star Facts</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="myScript.js"></script>
+    <script defer src="myData.js"></script>
+  </head>
+  <body>
+  <div id="myDiv">
+    <h1>DSO Practice</h1>
+    <p>
+      <label for="prev">Go to previous search? </label>
+      <input id="prevYes" name="prev" type="radio" />
+      <label for="prevYes">Yes</label>
+      <input id="prevNo" name="prev" type="radio" />
+      <label for="prevNo">No</label>
+      <br>
+      <label for="numPrev">How far back do you want to go? </label>
+      <input id="numPrev" name="numPrev" type="text" onmouseover="onMouseOver('numPrev')" onmouseout="onMouseOut('numPrev')" />
+      <br>
+      <label for="clearStorage">Clear storage? </label>
+      <input id="clearYes" name="clearYes" type="radio" />
+      <input id="clearNo" name="clearNo" type="radio" />
+      <br><br>
+      <label for="star_type">Star Type: </label>
+      <input id="star_type" name="star_type" type="text" onmouseover="onMouseOver('star_type')" onmouseout="onMouseOut('star_type')"/>
+      <br>
+      <label for="ra">RA: </label>
+      <input id="ra" name="ra" type="text" onmouseover="onMouseOver('ra')" onmouseout="onMouseOut('ra')"/>
+      <br>
+      <label for="redshift">Redshift: </label>
+      <input id="redshift" name="redshift" type="text" onmouseover="onMouseOver('redshift')" onmouseout="onMouseOut('redshift')"/>
+      <br>
+      <label for="picture_tf">Display Picture </label>
+      <input id="picture_tf" name="picture_tf" type="checkbox" />
+      <br>
+      <label for="save">Save search? </label>
+      <input id="saveYes" name="save" type="radio" value="Yes" />
+      <label for="saveYes">Yes</label>
+      <input id="saveNo" name="save" type="radio" value="No" />
+      <label for="saveNo">No</label>
+      <br><br>
+      <button onclick='myClick()'>Click for your star</button>
+    </p>
+  </div>
+  </body>
+</html>
